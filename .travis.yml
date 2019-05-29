@@ -1,10 +1,8 @@
 language: node_js
 node_js:
   - "10"
-before_install:
-  - npm install @jermken/qc-cli -g
 install:
-  - npm install
+  - npm install @jermken/qc-cli -g && npm install
 
 script:
   - qc build
